@@ -33,7 +33,6 @@ section h2 {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    /* transform-style: preserve-3d; */
 }
 
 .banner .blocks {
@@ -42,8 +41,7 @@ section h2 {
    width: 5vw;
    height: 5vh;
    background: #fff;
-   animation: animate .75s ease-in-out forwards;
-   /* transform-style: preserve-3d; */
+   animation: animate 0.75s ease-in-out forwards;
 }
 
 /*Animation*/
@@ -66,6 +64,7 @@ section h2 {
     50% {
         opacity: 1;
         background-image: url(../img/pexels-pixabay-122437.jpg);
+        background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
@@ -74,7 +73,9 @@ section h2 {
         opacity: 1;
         transform: scale(1) translateY(0px);
         background-image: url(../img/pexels-pixabay-122437.jpg);
+        background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
     }
+
 }
